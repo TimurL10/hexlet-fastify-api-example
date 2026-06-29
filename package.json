@@ -1,0 +1,31 @@
+{
+  "type": "module",
+  "name": "hexlet-fastify-api-example",
+  "description": "This project was bootstrapped with Fastify-CLI.",
+  "version": "1.0.0",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+     "@fastify/autoload": "^6.0.0",
+    "@fastify/sensible": "^6.0.0",
+    "fastify": "^5.0.0",
+    "fastify-cli": "^8.0.0"
+  },
+  "devDependencies": {
+    "c8": "^11.0.0"
+  },
+  "overrides": {
+  "yargs-parser": "21.1.1",
+  "chokidar": "3.6.0"
+},
+  "scripts": {
+    "test": "node --test",
+    "start": "fastify start -l info app.js",
+    "dev": "fastify start -w -l info -P app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+} 
