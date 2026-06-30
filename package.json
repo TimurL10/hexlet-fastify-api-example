@@ -8,18 +8,22 @@
     "test": "test"
   },
   "dependencies": {
-     "@fastify/autoload": "^6.0.0",
+    "@fastify/autoload": "^6.0.0",
     "@fastify/sensible": "^6.0.0",
+    "better-sqlite3": "^12.11.1",
+    "drizzle-orm": "^0.45.2",
     "fastify": "^5.0.0",
     "fastify-cli": "^8.0.0"
   },
   "devDependencies": {
-    "c8": "^11.0.0"
+    "@faker-js/faker": "^10.5.0",
+    "c8": "^11.0.0",
+    "drizzle-kit": "^0.31.10"
   },
   "overrides": {
-  "yargs-parser": "21.1.1",
-  "chokidar": "3.6.0"
-},
+    "yargs-parser": "21.1.1",
+    "chokidar": "3.6.0"
+  },
   "scripts": {
     "test": "node --test",
     "start": "fastify start -l info app.js",
@@ -28,4 +32,4 @@
   "keywords": [],
   "author": "",
   "license": "ISC"
-} 
+}

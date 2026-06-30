@@ -1,6 +1,7 @@
 import path from 'node:path'
 import AutoLoad from '@fastify/autoload'
 import { fileURLToPath } from 'node:url'
+import user_routes from './routes/api/users/users.js'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -27,4 +28,8 @@ export default async function (fastify, opts) {
     dir: path.join(__dirname, 'routes'),
     options: Object.assign({}, opts)
   })
+
+  fastify.register(user_routes, {
+    prefix:'/api'
+  });
 }
